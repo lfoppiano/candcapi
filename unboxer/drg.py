@@ -1,6 +1,3 @@
-from pygraph.classes.digraph import digraph
-from pygraph.algorithms.searching import depth_first_search
-import sys
 from itertools import permutations
 
 RHETORICAL_RELATIONS = [
@@ -234,7 +231,7 @@ class DRG:
     def __str__(self):
         out = ""
         for t in self.edges:
-            out += "%s\n" % unicode(t)
+            out += "%s\n" % str(t)
         return(out)
                
     def reassign_entities(self, bins):
